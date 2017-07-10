@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Load jQuery before jQuery UI modules -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<div class="jumbotron" style="background-color: teal; color: white;">
+			<div class="container">
+				<h1 class="text-center"><strong>Crystal Collector</strong></h1>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-primary" id="instruction-toggle">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Instructions</h3>
+					</div>
+					<div class="panel-body" id="instruction-container" style="display: none;">
+						<p class ="instructions">You will be given a random number goal at the start of the game. Your objective is to match this number exactly by using the value of the four crystals below.</p>
+						<p class="instructions"><strong>Clicking</strong> each crystal will add a specific value to your current total. These values will continue to add up until you meet your goal (a win) or exceed your goal (a loss).</p>
+						<p class="instructions">The value of each crystal is hidden until it is clicked.</p>
+						<p class="instructions">When the game ends, the value of the crystals and goal will change!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<center><img id ="win-image" src="assets/images/mchammer.gif" style="display: none; width:25%"></img></center>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Crystal Selection</h3>
+					</div>
+					<div class="panel-body text-center">
+						<img class="crystal-images" id="red-button" src="assets/images/red_gem.png" width="200px"></img>
+						<img class="crystal-images" id="blue-button" src="assets/images/blue_gem.png" width ="200px"></img>
+						<img class="crystal-images" id="green-button" src="assets/images/green_gem.png" width ="200px"></img>
+						<img class="crystal-images" id="purple-button" src="assets/images/purple_gem.png" width ="200px"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Target Score</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="goal-value"><strong>0</strong></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Your Score</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="current-points"><strong>0</strong></h3>
+						<h3 class="text-center" id="last-points" style="display: none"><strong>0</strong></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Wins</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="win-total"><strong>0</strong></h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+						<h3 class="panel-title text-center">Losses</h3>
+					</div>
+					<div class="panel-body">
+						<h3 class="text-center" id="loss-total"><strong>0</strong></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
