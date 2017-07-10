@@ -21,11 +21,12 @@
 			</div>
 		</div>
 
+		<!-- Instruction Toggler -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-primary" id="instruction-toggle">
 					<div class="panel-heading">
-						<h3 class="panel-title text-center">Instructions</h3>
+						<h3 class="panel-title text-center" style="cursor: pointer;">Instructions</h3>
 					</div>
 					<div class="panel-body" id="instruction-container" style="display: none;">
 						<p class ="instructions">You will be given a random number goal at the start of the game. Your objective is to match this number exactly by using the value of the four crystals below.</p>
@@ -37,16 +38,19 @@
 			</div>
 		</div>
 
+		<!-- Hidden image that briefly appears on win -->
 		<div class="row">
 			<div class="col-lg-12">
 				<center><img id ="win-image" src="assets/images/mchammer.gif" style="display: none; width:25%"></img></center>
 			</div>
 		</div>
+
+		<!-- Crystals -->
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
-						<h3 class="panel-title">Crystal Selection</h3>
+						<h3 class="panel-title text-center">Crystal Selection</h3>
 					</div>
 					<div class="panel-body text-center">
 						<img class="crystal-images" id="red-button" src="assets/images/red_gem.png" width="200px"></img>
@@ -59,6 +63,8 @@
 		</div>
 
 		<div class="row">
+
+			<!-- Target Score -->
 			<div class="col-lg-3">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
@@ -69,7 +75,8 @@
 					</div>
 				</div>
 			</div>
-
+			
+			<!-- Current Score -->
 			<div class="col-lg-3">
 				<div class="panel panel-primary">
 					<div class="panel-heading">
@@ -81,7 +88,8 @@
 					</div>
 				</div>
 			</div>
-
+			
+			<!-- Win Count -->
 			<div class="col-lg-3">
 				<div class="panel panel-success">
 					<div class="panel-heading">
@@ -92,7 +100,8 @@
 					</div>
 				</div>
 			</div>
-
+			
+			<!-- Loss Count -->
 			<div class="col-lg-3">
 				<div class="panel panel-danger">
 					<div class="panel-heading">
