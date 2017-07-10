@@ -1,0 +1,23 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron-style {
+	background-color: teal; 
+	color: white;
+}
+
+#h1-jumbo-font {
+	font-size: 48px;
+	font-family: 'Press Start 2P', cursive;
+
+}
+
+.crystal-images {
+	max-width: 200px;
+
+}
+
+.h3-panel {
+	font-size: 24px ;
+}
